@@ -5,7 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-// mount your routes under /api
 app.use("/api", postsRouter);
 
 app.get("/", (req, res) => {
